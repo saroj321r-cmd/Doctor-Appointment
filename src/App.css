@@ -1,0 +1,377 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f9fd;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #1769aa;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    color: #1769aa;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #333;
+}
+
+/* Common Page */
+
+.page {
+    width: 86%;
+    max-width: 1150px;
+    margin: 35px auto;
+    min-height: 75vh;
+}
+
+/* Home Page */
+
+.hero {
+    background-color: #dceeff;
+    padding: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero h1 {
+    color: #17456b;
+    font-size: 36px;
+}
+
+.hero-text {
+    color: #555;
+    line-height: 1.6;
+}
+
+.hero-symbol {
+    font-size: 90px;
+    color: #1976bd;
+}
+
+.small-heading {
+    color: #1976bd;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.main-button,
+.details-button {
+    background-color: #1976bd;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.main-button:hover,
+.details-button:hover {
+    background-color: #12598e;
+}
+
+/* Statistics */
+
+.section-title {
+    margin: 30px 0 15px;
+    color: #17456b;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.stat-box {
+    background-color: white;
+    padding: 22px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.stat-box h2 {
+    color: #1976bd;
+    font-size: 28px;
+}
+
+.stat-box p {
+    color: #666;
+}
+
+.home-bottom {
+    background-color: white;
+    padding: 22px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.outline-button {
+    background-color: white;
+    color: #1976bd;
+    border: 1px solid #1976bd;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+/* Page Heading */
+
+.page-heading {
+    margin-bottom: 25px;
+}
+
+.page-heading h1 {
+    color: #17456b;
+    font-size: 32px;
+}
+
+.page-heading p {
+    color: #666;
+}
+
+/* Search */
+
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.filters input {
+    width: 65%;
+}
+
+.filters select {
+    width: 35%;
+}
+
+.result-count {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Doctor Cards */
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.doctor-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.doctor-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #e2f1ff;
+    color: #1976bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 23px;
+}
+
+.doctor-card h3 {
+    color: #17456b;
+}
+
+.doctor-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.speciality {
+    color: #1976bd !important;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 13px;
+}
+
+.doctor-card .fee {
+    color: #333;
+    font-weight: bold;
+}
+
+.available {
+    color: green !important;
+}
+
+.not-available {
+    color: red !important;
+}
+
+.details-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Doctor Details */
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.details-card {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.details-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.big-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+}
+
+.details-top h1 {
+    color: #17456b;
+}
+
+.detail-list {
+    padding: 15px 0;
+    line-height: 1.7;
+}
+
+.detail-list p {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+/* Bookings */
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.booked-label {
+    text-align: center;
+}
+
+.empty-message {
+    background-color: white;
+    padding: 35px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.empty-message h2 {
+    color: #17456b;
+}
+
+/* Footer */
+
+footer {
+    background-color: #dceeff;
+    color: #555;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hero-symbol {
+        display: none;
+    }
+
+    .stats,
+    .doctor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters input,
+    .filters select {
+        width: 100%;
+    }
+
+    .home-bottom {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .page {
+        width: 92%;
+    }
+}
